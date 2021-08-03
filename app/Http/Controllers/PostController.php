@@ -25,7 +25,7 @@ class PostController extends Controller
     /**
      * 詳細画面へ遷移
      *
-     * @param viewから渡ってきたidのpostデータ
+     * @param Post $post viewから渡ってきたidのpostデータ
      *
      * Implicit Binding
      */
@@ -37,10 +37,14 @@ class PostController extends Controller
         // 存在しないidの場合はエラー画面遷移
         // $post = Post::findOrFail($id);
 
-        // $post = $post->comments()->latest()->get();
+        // コメントを最新順にする
+        $comments = $post->comments()->latest()->get();
 
         return view('posts.show')
-            -> with(['post' => $post]);
+            -> with([
+                'post' => $post,
+                'comments' => $comments
+            ]);
     }
 
 

@@ -29,8 +29,8 @@
             </form>
         </li>
 
-        @foreach ($post->comments()->latest()->get() as $comment)
-        {{-- @foreach ($post->comments as $comment) --}}
+        {{-- @foreach ($post->comments()->latest()->get() as $comment) --}}
+        @foreach ($comments as $comment)
             <li>{{ $comment->body }}</li>
             <form action="{{ route('comments.destroy', $comment)}}" method="post" class="delete-comment">
                 @method('DELETE')
