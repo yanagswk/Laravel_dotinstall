@@ -7,6 +7,9 @@ Laravel : 8.52.0
 ## 参考動画  
 [ドットインストール](https://dotinstall.com/lessons/basic_laravel_v3)
 
+## パス  
+C:\Users\yanag\Documents\code\Laravel\MyBBS
+
 ## コマンド  
 
 - Laravel環境  インストール
