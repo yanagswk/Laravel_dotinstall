@@ -10,7 +10,7 @@ Laravel : 8.52.0
 ## パス  
 C:\Users\yanag\Documents\code\Laravel\MyBBS
 
-## コマンド  
+## コマンド(WSLで実行)  
 
 - Laravel環境  インストール
 curl -s "https://laravel.build/MyBBS" | bash  
